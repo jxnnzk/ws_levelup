@@ -15,5 +15,5 @@ ESX.RegisterUsableItem(WS.VisumItem, function(source)
     local currentLevel = exports["ws_visum-v2"]:GetVisum(source) or 0
     local newLevel = currentLevel + 1
 
-    exports["ws_visum-v2"]:SetVisum(source, newLevel)
+    exports["ws_visum-v2"]:SetVisum(source, newLevel, true)
 end)
